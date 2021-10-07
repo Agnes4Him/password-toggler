@@ -1,0 +1,50 @@
+body {
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  height:100vh;
+  
+}
+
+#formContainer {
+
+  width:25vw;
+}
+
+.miniContainer {
+
+  margin-bottom:1rem;
+  width:100%;
+}
+
+#username, #userPassword {
+
+  width:100%;
+  padding:1rem 0.5rem;
+  
+}
+
+.passwordContainer {
+
+  position:relative;
+}
+
+.fas {
+
+  position:absolute;
+  left:23vw;
+  top:3vh;
+  color:royalblue;
+}
+
+
+#btn {
+
+  width:100%;
+  padding:1rem 0.5rem;
+  background-color:royalblue;
+  border:none;
+  color:whitesmoke;
+}

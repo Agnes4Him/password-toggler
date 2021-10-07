@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css" />
+  <title>Password Toggle</title>
+</head>
+<body>
+
+  <div id="formContainer">
+
+    <div class="miniContainer">
+
+      <input type="text" placeholder="Username" id="username">
+
+    </div>
+
+    <div class="miniContainer passwordContainer">
+
+      <input type="password" id=userPassword placeholder="password">
+
+      <i class="fas fa-eye-slash" id="eyeIcon"></i>
+
+    </div>
+
+    <button type="button" id="btn">Submit</button>
+
+  </div>
+
+  <script type="text/javascript">
+
+   var eye = document.getElementById("eyeIcon");
+
+   var userPassword = document.getElementById("userPassword");
+
+   eye.addEventListener("click", function(){
+
+     if(eye.classList.contains("fa-eye-slash")) {
+
+       eye.classList.replace("fa-eye-slash", "fa-eye");
+
+       userPassword.setAttribute("type", "text");
+
+     }else {
+
+      eye.classList.replace("fa-eye", "fa-eye-slash");
+
+      userPassword.setAttribute("type", "password");
+
+     }
+   })
+  
+  </script>
+  
+</body>
+</html>
